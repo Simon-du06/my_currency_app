@@ -12,23 +12,6 @@ This is a simple currency converter application that allows users to convert amo
 ## Project Structure
 ```
 currency-converter-app
-├── src
-│   ├── components
-│   │   └── CurrencyConverter.tsx  # Component for handling currency conversion logic
-│   ├── screens
-│   │   └── HomeScreen.tsx          # Main screen rendering the CurrencyConverter component
-│   ├── services
-│   │   └── api.ts                  # API calls for fetching currency exchange rates
-│   ├── styles
-│   │   └── styles.ts               # Styling for the application
-│   └── utils
-│       └── helpers.ts              # Utility functions for formatting and validation
-├── assets
-│   └── fonts                       # Custom fonts for the application
-├── App.tsx                        # Entry point of the application
-├── package.json                   # npm configuration file
-├── tsconfig.json                  # TypeScript configuration file
-└── README.md                      # Documentation for the project
 ```
 
 ## Installation
