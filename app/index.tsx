@@ -6,7 +6,7 @@ export default function Index() {
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>Hello World!</Text>
+      <Text style={styles.text}>Euro to Dollar converter</Text>
       <AmountInput />
     </View>
   );
@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#25292e",
   },
   text: {
+    fontSize: 24,
+    textAlign: "center",
     color: "#ffffff",
   },
 });

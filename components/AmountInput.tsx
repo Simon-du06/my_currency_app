@@ -2,21 +2,41 @@ import React, {useState} from 'react';
 import { Text, TextInput, View, StyleSheet } from "react-native";
 
 const AmountInput = () => {
-  const [text, setText] = useState('');
+  const [amount, setText] = useState('');
+  const [convertedAmount, setConvertedAmount] = useState(0.0);
+
+  const handleAmountChange = (value: string) => {
+    setConvertedAmount(parseFloat(DollarConvertion(value, 1.1)));
+  };
+
   return (
     <View style={{padding: 10}}>
       <TextInput
-        style={{height: 40, color: '#ffffff', alignItems:'center', alignContent: 'center'}}
-        placeholder="Enter amount"
-        onChangeText={newText => setText(newText)}
-        defaultValue={text}
+        style={styles.text}
+        placeholder="Enter amount in €"
+        onChangeText={handleAmountChange}
+        defaultValue={amount}
         keyboardType="numeric"
       />
-      <Text style={{padding: 10, fontSize: 24, color: '#ffffff'}}>
-        {text}
+      <Text style={styles.text}>
+        {convertedAmount}$
       </Text>
     </View>
   );
 };
 
 export default AmountInput;
+
+const DollarConvertion = (amount:string, rate:number) => {
+  const dotamount = amount.replace(',', '.');
+  return (parseFloat(dotamount) * rate).toFixed(2);
+}
+
+const styles = StyleSheet.create({
+  text: {
+    padding: 10,
+    fontSize: 24,
+    textAlign: 'center',
+    color: "#ffffff",
+  },
+});
