@@ -6,17 +6,14 @@ const AmountInput = () => {
   return (
     <View style={{padding: 10}}>
       <TextInput
-        style={{height: 40}}
+        style={{height: 40, color: '#ffffff', alignItems:'center', alignContent: 'center'}}
         placeholder="Enter amount"
         onChangeText={newText => setText(newText)}
         defaultValue={text}
         keyboardType="numeric"
       />
-      <Text style={{padding: 10, fontSize: 42}}>
-        {text
-          .split(' ')
-          .map(word => word && '🍕')
-          .join(' ')}
+      <Text style={{padding: 10, fontSize: 24, color: '#ffffff'}}>
+        {text}
       </Text>
     </View>
   );
