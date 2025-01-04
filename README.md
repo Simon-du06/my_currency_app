@@ -14,29 +14,12 @@ This is a simple currency converter application that allows users to convert amo
 currency-converter-app
 ```
 
-## Installation
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd currency-converter-app
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
 ## Usage
 To start the application, run:
 ```
 npm start
 ```
-This will launch the app in your default web browser.
-
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+This will launch the app in your default web browser by pressing w.
 
 ## License
 This project is licensed under the MIT License.
