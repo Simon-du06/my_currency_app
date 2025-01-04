@@ -1,4 +1,5 @@
 import { Text, View, StyleSheet } from "react-native";
+import AmountInput from '../components/AmountInput';
 
 export default function Index() {
   return (
@@ -6,6 +7,7 @@ export default function Index() {
       style={styles.container}
     >
       <Text style={styles.text}>Hello World!</Text>
+      <AmountInput />
     </View>
   );
 }
