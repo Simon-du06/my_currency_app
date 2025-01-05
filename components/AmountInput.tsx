@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { Text, TextInput, View, StyleSheet } from "react-native";
+import { Text, TextInput, View, Button } from "react-native";
+import { DollarConvertion } from '../utils/currency';
 import { styles } from '../styles/styles';
 
 const AmountInput = () => {
@@ -19,6 +20,10 @@ const AmountInput = () => {
         defaultValue={amount}
         keyboardType="numeric"
       />
+      {/* <Button 
+        title="Convert"
+        onPress={() => handleAmountChange(amount)} 
+      /> */}
       <Text style={styles.text}>
         {convertedAmount}$
       </Text>
@@ -27,8 +32,3 @@ const AmountInput = () => {
 };
 
 export default AmountInput;
-
-const DollarConvertion = (amount:string, rate:number) => {
-  const dotamount = amount.replace(',', '.');
-  return (parseFloat(dotamount) * rate).toFixed(2);
-}
