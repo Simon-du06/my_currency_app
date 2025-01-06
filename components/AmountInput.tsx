@@ -32,7 +32,7 @@ const AmountInput = () => {
         onPress={() => handleAmountChange(amount)} 
       /> */}
       <Text style={styles.text}>
-        {convertedAmount}$
+        {isNaN(convertedAmount) ? 0 : convertedAmount}$
       </Text>
     </View>
   );
