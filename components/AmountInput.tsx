@@ -27,10 +27,6 @@ const AmountInput = () => {
         defaultValue={amount}
         keyboardType="numeric"
       />
-      {/* <Button 
-        title="Convert"
-        onPress={() => handleAmountChange(amount)} 
-      /> */}
       <Text style={styles.text}>
         {isNaN(convertedAmount) ? 0 : convertedAmount}$
       </Text>
