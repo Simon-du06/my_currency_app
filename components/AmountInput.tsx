@@ -7,23 +7,23 @@ import { get_exchange } from '../utils/api'
 const AmountInput = () => {
   const [amount, setText] = useState('');
   const [convertedAmount, setConvertedAmount] = useState(0.0);
-  const [rate, setRate] = useState('');
+  // const [rate, setRate] = useState('');
 
-  useEffect(() => {
-    get_exchange(setRate);
-  }, []);
+  // useEffect(() => {
+  //   get_exchange(setRate);
+  // }, []);
 
-  const handleAmountChange = (value: string) => {
-    const obj = JSON.parse(rate);
-    setConvertedAmount(parseFloat(DollarConvertion(value, obj.rates.USD)));
-  };
+  // const handleAmountChange = (value: string) => {
+  //   const obj = JSON.parse(rate);
+  //   setConvertedAmount(parseFloat(DollarConvertion(value, obj.rates.USD)));
+  // };
 
   return (
     <View style={{padding: 10}}>
       <TextInput
         style={styles.text}
         placeholder="Enter amount in €"
-        onChangeText={handleAmountChange}
+        // onChangeText={handleAmountChange}
         defaultValue={amount}
         keyboardType="numeric"
       />

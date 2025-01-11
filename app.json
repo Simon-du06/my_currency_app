@@ -28,11 +28,27 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "enableFullScreeImage_legacy" : true
         }
-      ]
+      ],
+    [
+      "expo-font",
+      {
+        "fonts" : [
+          "./assets/fonts/Lato-Bold.ttf",
+          "./assets/fonts/Lato-SemiBold.ttf",
+          "./assets/fonts/Lato-ExtraBold.ttf",
+          "./assets/fonts/Lato-Black.ttf",
+          "./assets/fonts/Lato-Light.ttf",
+          "./assets/fonts/Lato-ExtraLight.ttf",
+          "./assets/fonts/Lato-Regular.ttf",
+          "./assets/fonts/Lato-Thin.ttf",
+          "./assets/fonts/Lato-Medium.ttf"
+        ] 
+      }
+    ]
     ],
     "experiments": {
       "typedRoutes": true
