@@ -19,15 +19,15 @@ const AmountInput = () => {
   // };
 
   return (
-    <View style={{padding: 10}}>
+    <View className='flex flex-row'>
       <TextInput
-        style={styles.text}
+        className='font-lato-bold text-4xl text-left align-bottom'
         placeholder="Enter amount in €"
         // onChangeText={handleAmountChange}
         defaultValue={amount}
         keyboardType="numeric"
       />
-      <Text style={styles.text}>
+      <Text>
         {isNaN(convertedAmount) ? 0 : convertedAmount}$
       </Text>
     </View>

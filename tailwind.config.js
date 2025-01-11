@@ -17,11 +17,11 @@ module.exports = {
         "lato-thin": ["Lato-Thin", "sans-serif"],
       },
       colors : {
-        "black": "#202532",
-        "primary": "#676EDA",
-        "secondary": "#8292B3",
-        "ternary": "#CED2DA",
-        "notif" : "#EE420B"
+        black: "#202532",
+        primary: "#676EDA",
+        secondary: "#8292B3",
+        ternary: "#CED2DA",
+        notif : "#EE420B"
       },
     },
   },
