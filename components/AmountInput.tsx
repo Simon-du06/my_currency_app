@@ -4,6 +4,7 @@ import { SelectList } from 'react-native-dropdown-select-list'
 
 import images from "@/constants/icons";
 import { currencyData } from '@/constants/currencies';
+import { symbols } from '@/constants/currencies';
 import { get_exchange } from '@/utils/api'
 import { DollarConvertion } from '@/utils/currency';
 
@@ -24,6 +25,11 @@ const AmountInput = () => {
     setConvertedAmount(parseFloat(DollarConvertion(value, obj.rates[currency])));
   };
 
+  const getSymbol = (currency: string) => {
+    const symbolObj = symbols.find((item) => item.value === currency);
+    return symbolObj ? symbolObj.symbol : '';
+  };
+
   return (
     <><View className="flex flex-col mt-2 justify-center rounded-3xl w-96 border-2 border-primary px-6 py-2">
       <Text className="font-lato-semibold text-left text-xl">You have</Text>
@@ -42,7 +48,7 @@ const AmountInput = () => {
       <Text className="font-lato-semibold text-left text-xl">Which is</Text>
       <View className='flex flex-row items-center'>
         <Text className='flex-1 font-lato-bold text-4xl text-left'>
-          {isNaN(convertedAmount) ? 0 : convertedAmount}$
+          {isNaN(convertedAmount) ? 0 : convertedAmount}{getSymbol(selected)}
         </Text>
       <Image source={images.usa} className='w-10 h-10' />
       {/* <Text className='font-lato-bold text-xl ml-2'>USD</Text> */}

@@ -8,3 +8,14 @@ export const currencyData = [
     { key: '7', value: 'CHF' },
     { key: '8', value: 'CNH'}
   ];
+
+  export const symbols = [
+    {value: 'USD', symbol: '$' },
+    {value: 'EUR', symbol: '€' },
+    {value: 'GBP', symbol: '£' },
+    {value: 'JPY', symbol: '¥' },
+    {value: 'AUD', symbol: '$' },
+    {value: 'CAD', symbol: '$' },
+    {value: 'CHF', symbol: 'Fr' },
+    {value: 'CNH', symbol: '¥'}
+  ];
