@@ -9,6 +9,7 @@ import closedArrow from "@/assets/images/Closed.png";
 import closedupArrow from "@/assets/images/Close_up.png";
 import openArrow from "@/assets/images/Open.png";
 import euro from "@/assets/images/Euro.png";
+import usa from "@/assets/images/usa.png";
 
 export default {
     switchicon,
@@ -22,4 +23,5 @@ export default {
     closedupArrow,
     openArrow,
     euro,
+    usa,
 };
