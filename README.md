@@ -1,6 +1,6 @@
 # Currency Converter App
 
-![Alt text](relative%20/assets/currency_app.jpg?raw=true "Title")
+![Alt text](https://github.com/SimonLockpick06/my_currency_app/blob/main/assets/images/currency_app.jpg)
 
 ## Description
 This is a simple currency converter application that allows users to convert amounts between different currencies. The app fetches real-time exchange rates and provides an intuitive interface for users to input their desired amount and select the currencies for conversion.
