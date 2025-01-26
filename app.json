@@ -2,6 +2,7 @@
   "expo": {
     "name": "currency_app",
     "slug": "currency_app",
+    "description": "A good looking mobile app that allow to convert Euro to multiple currency",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -30,28 +31,42 @@
           "image": "./assets/images/splash-icon.png",
           "resizeMode": "cover",
           "backgroundColor": "#ffffff",
-          "enableFullScreeImage_legacy" : true
+          "enableFullScreeImage_legacy": true
         }
       ],
-    [
-      "expo-font",
-      {
-        "fonts" : [
-          "./assets/fonts/Lato-Bold.ttf",
-          "./assets/fonts/Lato-SemiBold.ttf",
-          "./assets/fonts/Lato-ExtraBold.ttf",
-          "./assets/fonts/Lato-Black.ttf",
-          "./assets/fonts/Lato-Light.ttf",
-          "./assets/fonts/Lato-ExtraLight.ttf",
-          "./assets/fonts/Lato-Regular.ttf",
-          "./assets/fonts/Lato-Thin.ttf",
-          "./assets/fonts/Lato-Medium.ttf"
-        ] 
-      }
-    ]
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Lato-Bold.ttf",
+            "./assets/fonts/Lato-SemiBold.ttf",
+            "./assets/fonts/Lato-ExtraBold.ttf",
+            "./assets/fonts/Lato-Black.ttf",
+            "./assets/fonts/Lato-Light.ttf",
+            "./assets/fonts/Lato-ExtraLight.ttf",
+            "./assets/fonts/Lato-Regular.ttf",
+            "./assets/fonts/Lato-Thin.ttf",
+            "./assets/fonts/Lato-Medium.ttf"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "237cd178-46d9-4ece-a102-c62851767a15"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/237cd178-46d9-4ece-a102-c62851767a15"
     }
   }
 }
