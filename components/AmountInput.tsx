@@ -14,9 +14,9 @@ const AmountInput = () => {
   const [rate, setRate] = useState('');
   const [selected, setSelected] = useState("USD");
 
-  useEffect(() => {
-    get_exchange(setRate);
-  }, []);
+  // useEffect(() => {
+  //   get_exchange(setRate);
+  // }, []);
 
   const handleAmountChange = (value: string, currency: string) => {
     setAmount(value);
@@ -30,6 +30,11 @@ const AmountInput = () => {
     return symbolObj ? symbolObj.symbol : '';
   };
 
+  const getIcon = (currency: string) => {
+    const symbolObj = symbols.find((item) => item.value === currency);
+    return symbolObj ? symbolObj.image : '';
+  };
+
   return (
     <><View className="flex flex-col mt-2 justify-center rounded-3xl w-96 border-2 border-primary px-6 py-2">
       <Text className="font-lato-semibold text-left text-xl">You have</Text>
@@ -41,7 +46,6 @@ const AmountInput = () => {
           defaultValue={amount}
           keyboardType="numeric" />
         <Image source={images.euro} className='w-10 h-10' />
-        {/* <Text className='font-lato-bold text-xl ml-2'>EUR</Text> */}
       </View>
     </View>
     <View className="flex flex-col mt-2 justify-center rounded-3xl w-96 border-2 border-ternary px-6 py-2">
@@ -50,8 +54,7 @@ const AmountInput = () => {
         <Text className='flex-1 font-lato-bold text-4xl text-left'>
           {isNaN(convertedAmount) ? 0 : convertedAmount}{getSymbol(selected)}
         </Text>
-      <Image source={images.usa} className='w-10 h-10' />
-      {/* <Text className='font-lato-bold text-xl ml-2'>USD</Text> */}
+      <Image source={getIcon(selected)} className='w-10 h-10' />
       <SelectList
           setSelected={(currency : string) => handleAmountChange(amount, currency)}
           data={currencyData}

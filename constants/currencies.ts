@@ -1,3 +1,5 @@
+import images from "@/constants/icons";
+
 export const currencyData = [
     { key: '1', value: 'USD' },
     { key: '2', value: 'EUR' },
@@ -10,12 +12,12 @@ export const currencyData = [
   ];
 
   export const symbols = [
-    {value: 'USD', symbol: '$' },
-    {value: 'EUR', symbol: '€' },
-    {value: 'GBP', symbol: '£' },
-    {value: 'JPY', symbol: '¥' },
-    {value: 'AUD', symbol: '$' },
-    {value: 'CAD', symbol: '$' },
-    {value: 'CHF', symbol: 'Fr' },
-    {value: 'CNH', symbol: '¥'}
+    {value: 'USD', symbol: '$', image: images.usa},
+    {value: 'EUR', symbol: '€', image: images.euro},
+    {value: 'GBP', symbol: '£', image: images.uk},
+    {value: 'JPY', symbol: '¥', image: images.japan},
+    {value: 'AUD', symbol: '$', image: images.australia},
+    {value: 'CAD', symbol: '$', image: images.canada},
+    {value: 'CHF', symbol: 'Fr',image: images.swiss},
+    {value: 'CNH', symbol: '¥', image: images.china}
   ];

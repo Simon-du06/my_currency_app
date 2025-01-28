@@ -10,6 +10,12 @@ import closedupArrow from "@/assets/images/Close_up.png";
 import openArrow from "@/assets/images/Open.png";
 import euro from "@/assets/images/Euro.png";
 import usa from "@/assets/images/usa.png";
+import uk from "@/assets/images/england.png";
+import china from "@/assets/images/china.png";
+import japan from "@/assets/images/japan.png";
+import australia from "@/assets/images/australia.png";
+import canada from "@/assets/images/canada.png";
+import swiss from "@/assets/images/swiss.png";
 
 export default {
     switchicon,
@@ -24,4 +30,10 @@ export default {
     openArrow,
     euro,
     usa,
+    uk,
+    china,
+    japan,
+    australia,
+    canada,
+    swiss
 };
