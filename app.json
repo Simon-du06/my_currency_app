@@ -3,7 +3,7 @@
     "name": "currency_app",
     "slug": "currency_app",
     "description": "A good looking mobile app that allow to convert Euro to multiple currency",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "mycurrencyapp",

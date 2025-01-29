@@ -10,7 +10,6 @@ export default function Index() {
     <SafeAreaView className="bg-white h-full">
       <ScrollView contentContainerClassName="h-full items-center justify-center">
         <AmountInput />
-        <Link href="/graphic">Graphic</Link>
       </ScrollView>
     </SafeAreaView>
   );

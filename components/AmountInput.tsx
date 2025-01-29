@@ -14,13 +14,13 @@ const AmountInput = () => {
   const [rate, setRate] = useState('');
   const [selected, setSelected] = useState('USD');
 
-  useEffect(() => {
-    get_exchange(setRate);
-  }, []);
+  // useEffect(() => {
+  //   get_exchange(setRate);
+  // }, []);
 
-  useEffect(() => {
-    handleAmountChange(amount, selected);
-  }, [rate]);
+  // useEffect(() => {
+  //   handleAmountChange(amount, selected);
+  // }, [rate]);
 
   const handleAmountChange = (value: string, currency: string) => {
     setAmount(value);
