@@ -66,6 +66,10 @@ const AmountInput = () => {
             setSelected={(currency : string) => handleAmountChange(amount, currency)}
             data={currencyData}
             save="value"
+            search={false}
+            fontFamily='lato-semibold'
+            boxStyles={{borderRadius:13}}
+            dropdownStyles={{backgroundColor: 'white'}}
           />
       </View>
       </View>
