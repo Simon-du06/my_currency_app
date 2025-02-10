@@ -5,7 +5,7 @@ import { SelectList } from 'react-native-dropdown-select-list'
 import images from "@/constants/icons";
 import { currencyData } from '@/constants/currencies';
 import { symbols } from '@/constants/currencies';
-import { get_exchange } from '@/utils/api'
+import { get_exchange } from '@/utils/rate_api'
 import { DollarConvertion } from '@/utils/currency';
 
 const AmountInput = () => {
@@ -25,7 +25,7 @@ const AmountInput = () => {
   const handleAmountChange = (value: string, currency: string) => {
     setAmount(value);
     setSelected(currency)
-    if (rate === '') return;
+    if (rate || rate === '') return;
     const obj = JSON.parse(rate);
     setConvertedAmount(parseFloat(DollarConvertion(value, obj.rates[currency])));
   };

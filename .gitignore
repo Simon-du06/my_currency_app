@@ -5,5 +5,5 @@
 expo-env.d.ts
 # @end expo-cli
 
+utils/
 .vscode/
-utils/config.ts
