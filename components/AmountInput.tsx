@@ -25,7 +25,7 @@ const AmountInput = () => {
   const handleAmountChange = (value: string, currency: string) => {
     setAmount(value);
     setSelected(currency)
-    if (rate || rate === '') return;
+    if (rate === '') return;
     const obj = JSON.parse(rate);
     setConvertedAmount(parseFloat(DollarConvertion(value, obj.rates[currency])));
   };
