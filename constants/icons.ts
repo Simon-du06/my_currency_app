@@ -17,6 +17,7 @@ import japan from "@/assets/images/japan.png";
 import australia from "@/assets/images/australia.png";
 import canada from "@/assets/images/canada.png";
 import swiss from "@/assets/images/swiss.png";
+import turkey from "@/assets/images/turkey.png";
 import icon from "@/assets/images/icon.png"
 import currency from "@/assets/images/currency.png"
 
@@ -40,6 +41,7 @@ export default {
     australia,
     canada,
     swiss,
+    turkey,
     icon,
     currency
 };

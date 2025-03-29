@@ -8,7 +8,8 @@ export const currencyData = [
     { key: '5', value: 'AUD' },
     { key: '6', value: 'CAD' },
     { key: '7', value: 'CHF' },
-    { key: '8', value: 'CNH'}
+    { key: '8', value: 'CNH'},
+    { key: '9', value: 'TRY'}
   ];
 
   export const symbols = [
@@ -19,5 +20,6 @@ export const currencyData = [
     {value: 'AUD', symbol: '$', image: images.australia},
     {value: 'CAD', symbol: '$', image: images.canada},
     {value: 'CHF', symbol: 'Fr',image: images.swiss},
-    {value: 'CNH', symbol: '¥', image: images.china}
+    {value: 'CNH', symbol: '¥', image: images.china},
+    {value: 'TRY', symbol: '₺', image: images.turkey}
   ];
